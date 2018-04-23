@@ -1,5 +1,7 @@
 package com.studythread01;
 
+import java.util.Timer;
+
 import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class MyThread1 extends Thread{
@@ -24,8 +26,11 @@ public class MyThread1 extends Thread{
 		
 		MyThread1 myThread1 = new MyThread1();
 		myThread1.start();
-		
+		//1.先输出主线程，停留10秒输出异步线程
 		System.out.println("main --" + Thread.currentThread().getName());
+		
+		
+		
 		
 	}
 
